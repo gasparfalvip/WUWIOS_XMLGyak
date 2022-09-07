@@ -1,0 +1,84 @@
+html{
+    font-family: 'Poppins', sans-serif;
+    background: url("../images/background1.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+p{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#menu{
+    height: 130px;
+    margin: auto;
+    margin-top: 40px;
+    width: 500px;
+}
+
+button{
+    text-decoration: none;
+    background-image: radial-gradient(darkgreen, darkolivegreen);
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 5px crimson;
+}
+.menuButton{
+    background-image: radial-gradient(darkgreen, darkolivegreen);
+    cursor: pointer;
+    color: white;
+    text-shadow: 2px 2px 5px crimson;
+    padding: 10px 10px;
+    border-radius: 5px
+}
+
+#firstline::first-line{
+    color:green;
+}
+
+.content{
+    background-color: rgba(0,255,0,0.8);
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+form{
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.adjpadding{
+    padding: 5px;
+}
+
+.must::after{
+    text-transform: uppercase;
+    content: "*";
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
