@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE model SYSTEM "wuwios_ertodtd.dtd">
+<model>
+    <A Aa="1">
+        <Ac>
+            <Acd></Acd>
+            <Ace></Ace>
+        </Ac>
+    </A>
+    <B Ba="2">
+        <Bb>
+            <Bbx></Bbx>
+            <Bby></Bby>
+        </Bb>
+    </B>
+    <C Ca="3">
+        <Cb></Cb>
+    </C>
+    <A_B>
+        <A_Bc></A_Bc>
+    </A_B>
+</model>

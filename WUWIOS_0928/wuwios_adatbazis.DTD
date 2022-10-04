@@ -1,0 +1,8 @@
+<!DOCTYPE adatbazis [
+        <!ELEMENT adatbázis (dolgozo)*>
+        <!ELEMENT dolgozo (#PCDATA)>
+        <!ATTLIST dolgozo
+                kod CDATA #REQUIRED
+                nev CDATA #REQUIRED
+                fizetes CDATA #REQUIRED>
+        ]>
