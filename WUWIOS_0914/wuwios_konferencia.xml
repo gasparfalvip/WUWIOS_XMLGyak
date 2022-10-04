@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia id="1">
+  <cim>Miskolc, Egyetem út 1, 3515</cim>
+  <hallgatok>
+    <hallgato id="hal1">
+      <nev>Béla Béla</nev>
+      <lakcim>Miskolc, Eper utca 2., 3535</lakcim>
+    </hallgato>
+    <hallgato id="hal2">
+      <nev>Anna Anna</nev>
+      <lakcim>Miskolc, E/2, 3515</lakcim>
+    </hallgato>
+  </hallgatok>
+  <helyszin>A1/XXXII</helyszin>
+  <eloado id="elo1">
+    <nev>Dr. Menő Pista</nev>
+    <adoszam>12345678-1-11</adoszam>
+    <lakcim>Miskolc, Kakas utca 3., 3533</lakcim>
+  </eloado>
+  <datum>2022.04.20</datum>
+</konferencia>
