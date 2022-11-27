@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaWUWIOS.xsd">
+
+<!-- videótéka létrehozása -->
+    <videoteka tk_id="1">
+        <nev>Menőbb TK</nev>        
+        <cim>
+            <iranyitosz>3535</iranyitosz>
+            <varos>Miskolc</varos>
+            <utcahsz>Eper 2.</utcahsz>
+        </cim>
+    </videoteka>
+
+<!-- a dolgozók létrehozása -->
+    <dolgozo d_id="1" tk_id="1">
+        <nev>Cserepes Virág</nev>
+        <beosztas>vezető</beosztas>
+        <ber>240000</ber>
+    </dolgozo>
+
+    <dolgozo d_id="2" tk_id="1">
+        <nev>Ebéd Elek</nev>
+        <beosztas>eladó</beosztas>
+        <ber>180000</ber>
+    </dolgozo>
+
+    <dolgozo d_id="3" tk_id="1">
+        <nev>Rönk Ödön</nev>
+        <beosztas>eladó</beosztas>
+        <ber>190000</ber>
+    </dolgozo>
+
+<!-- a tételek létrehozása -->
+
+    <tetel t_id="1" tk_id="1">
+        <cim>Halálos iramban</cim>
+        <tipus>Kazetta</tipus>
+        <megjelenes>2001.06.22.</megjelenes>
+        <ar>1000</ar>
+        <korhatar>16</korhatar>
+    </tetel>
+
+    <tetel t_id="2" tk_id="1">
+        <cim>Halálosabb iramban</cim>
+        <tipus>Kazetta</tipus>
+        <megjelenes>2003.06.06.</megjelenes>
+        <ar>1200</ar>
+        <korhatar>12</korhatar>
+    </tetel>
+
+    <tetel t_id="3" tk_id="1">
+        <cim>Halálos iramban: Tokiói hajsza</cim>
+        <tipus>DVD</tipus>
+        <megjelenes>2006.06.04.</megjelenes>
+        <ar>1400</ar>
+        <korhatar>12</korhatar>
+    </tetel>
+
+    <tetel t_id="4" tk_id="1">
+        <cim>Halálos iram</cim>
+        <tipus>DVD</tipus>
+        <megjelenes>2009.04.03.</megjelenes>
+        <ar>1400</ar>
+        <korhatar>16</korhatar>
+    </tetel>
+
+    <tetel t_id="5" tk_id="1">
+        <cim>Halálos iram: Ötödik sebesség</cim>
+        <tipus>DVD</tipus>
+        <megjelenes>2011.04.29.</megjelenes>
+        <ar>1600</ar>
+        <korhatar>16</korhatar>
+    </tetel>
+
+    <tetel t_id="6" tk_id="1">
+        <cim>Halálos iramban 6</cim>
+        <tipus>DVD</tipus>
+        <megjelenes>2013.05.24.</megjelenes>
+        <ar>1600</ar>
+        <korhatar>16</korhatar>
+    </tetel>
+
+    <tetel t_id="7" tk_id="1">
+        <cim>Halálos iramban 7</cim>
+        <tipus>DVD</tipus>
+        <megjelenes>2015.04.03.</megjelenes>
+        <ar>1600</ar>
+        <korhatar>16</korhatar>
+    </tetel>
+
+<!-- a kuncsaftok létrehozása -->
+
+    <kuncsaft k_id="1" tk_id="1">
+        <nev>Nagy Endre</nev>
+        <szuld>1987.01.07.</szuld>
+        <lakcim>
+            <iranyitosz>3535</iranyitosz>
+            <varos>Miskolc</varos>
+            <utcahsz>Béke utca 2.</utcahsz>
+        </lakcim>
+    </kuncsaft>
+
+    <kuncsaft k_id="2" tk_id="1">
+        <nev>Kiss Virág</nev>
+        <szuld>2004.05.07.</szuld>
+        <lakcim>
+            <iranyitosz>3535</iranyitosz>
+            <varos>Miskolc</varos>
+            <utcahsz>Békés utca 8.</utcahsz>
+        </lakcim>
+    </kuncsaft>
+
+    <kuncsaft k_id="3" tk_id="1">
+        <nev>Közepes Kálmán</nev>
+        <szuld>2000.05.09.</szuld>
+        <lakcim>
+            <iranyitosz>3535</iranyitosz>
+            <varos>Miskolc</varos>
+            <utcahsz>Békétlen utca 10.</utcahsz>
+        </lakcim>
+    </kuncsaft>
+
+<!-- a kölcsönzések létrehozása -->
+    <kolcsonzes kk_id="1">
+         <tétlek>
+            <t>1</t>
+         </tétlek>
+    </kolcsonzes>
+
+    <kolcsonzes kk_id="2">
+         <tétlek>
+            <t>2</t>
+         </tétlek>
+    </kolcsonzes>
+
+    <kolcsonzes kk_id="3">
+         <tétlek>
+            <t>5</t>
+            <t>6</t>
+         </tétlek>
+    </kolcsonzes>
+
+<!-- a kuncsaft kölcsönzések kapcsoló tábla létrehozása -->
+
+    <k_kk k_id="1" kk_id="1">
+        <idopont>2022.05.06.</idopont>
+    </k_kk>
+
+    <k_kk k_id="2" kk_id="1">
+        <idopont>2022.05.06.</idopont>
+    </k_kk>
+
+    <k_kk k_id="3" kk_id="2">
+        <idopont>2022.07.20.</idopont>
+    </k_kk>
+
+    <k_kk k_id="2" kk_id="3">
+        <idopont>2022.03.10.</idopont>
+    </k_kk>
+
+
+</root>
