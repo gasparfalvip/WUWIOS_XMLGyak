@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vendeglatas xmlns:xs ="http://www.w3.org/2001/XMLSchema"  xsi:noNamespaceSchemaLocation = "XMLSchemaWuwios.xsd">
+
+	<etterem ekod = "e1">
+		<nev>Trófea</nev>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>Visegradi</utca>
+			<hazszam>13</hazszam>
+		</cim>
+		<csillag>4</csillag>	
+	</etterem>
+	
+	<etterem ekod = "e2">
+		<nev>Kert</nev>
+		<cim>
+			<varos>Budapest</varos>
+			<utca>kert</utca>
+			<hazszam>9</hazszam>
+		</cim>
+		<csillag>3</csillag>	
+	</etterem>
+	
+	<etterem ekod = "e3">
+		<nev>Jó</nev>
+		<cim>
+			<varos>Miskolc</varos>
+			<utca>Seholcsincs</utca>
+			<hazszam>21</hazszam>
+		</cim>
+		<csillag>5</csillag>	
+	</etterem>
+	
+	<foszakacs fkod = "f1" e_f = "e1">
+		<nev>Havas Peter</nev>
+		<eletkor>40</eletkor>
+		<vegzettseg>Pro chef 1</vegzettseg>
+	</foszakacs>
+	
+	<foszakacs fkod = "f2" e_f = "e2">
+		<nev>Joó Ferenc</nev>
+		<eletkor>30</eletkor>
+		<vegzettseg>Szakkozep</vegzettseg> 
+	</foszakacs>
+	
+	<foszakacs fkod = "f3" e_f = "e3">
+		<nev>Ugyes Tom</nev>
+		<eletkor>52</eletkor>
+		<vegzettseg>Szakkozep</vegzettseg>
+		<vegzettseg>Pro chef 1</vegzettseg>
+	</foszakacs>
+	
+	<szakacs szkod = "sz1" e_sz ="e1">
+		<nev>Gordon Róbert</nev>
+		<reszleg>Hús</reszleg>
+		<vegzettseg>Szakkozep</vegzettseg>
+		<vegzettseg>Jó szakacs kepzo</vegzettseg>
+	</szakacs>
+	
+	<szakacs szkod = "sz2" e_sz ="e2">
+		<nev>Lila Pál</nev>
+		<reszleg>Prep</reszleg>
+		<vegzettseg>Szakkozep</vegzettseg>
+		<vegzettseg>Jó szakacs kepzo</vegzettseg>
+	</szakacs>
+	
+	<szakacs szkod = "sz3" e_sz ="e3">
+		<nev>Lengyel Tibor</nev>
+		<reszleg>Desszert</reszleg>
+		<vegzettseg>Szakkozep</vegzettseg>
+		<vegzettseg>Jó szakacs kepzo</vegzettseg>
+	</szakacs>
+	
+	<gyakornok gykod ="gy1" e_gy = "e1">
+		<nev>Német Tamás</nev>
+		<gyakorlat>
+			<kezdete>2022.08.20</kezdete>
+			<idotartama>2 hó</idotartama>
+		</gyakorlat>
+		<muszak>Délelőtt</muszak>
+		<muszak>Este</muszak>	
+	</gyakornok>
+	
+	<gyakornok gykod ="gy2" e_gy = "e2">
+		<nev>Kovács Miklós</nev>
+		<gyakorlat>
+			<kezdete>2020.09.22</kezdete>
+			<idotartama>3 hó</idotartama>
+		</gyakorlat>
+		<muszak>Délelőtt</muszak>
+		<muszak>Este</muszak>	
+	</gyakornok>
+	
+	<gyakornok gykod ="gy3" e_gy = "e3">
+		<nev>Kovács Géza</nev>
+		<gyakorlat>
+			<kezdete>2018.03.13</kezdete>
+			<idotartama>1 hó</idotartama>
+		</gyakorlat>
+		<muszak>Délelőtt</muszak>	
+	</gyakornok>
+	
+	<vendeg vkod="v1">
+		<nev>Gömb Miklós</nev>
+		<eletkor>21</eletkor>
+		<cim>
+			<varos>Miskolc</varos>
+			<utca>Pistu</utca>
+			<hazszam>11</hazszam>
+		</cim>
+	</vendeg>
+	
+	<vendeg vkod="v2">
+		<nev>Tácoós Miklós</nev>
+		<eletkor>30</eletkor>
+		<cim>
+			<varos>Miskolc</varos>
+			<utca>Rákóczi</utca>
+			<hazszam>10</hazszam>
+		</cim>
+	</vendeg>
+	
+	<vendeg vkod="v3">
+		<nev>Hárt Gábor</nev>
+		<eletkor>18</eletkor>
+		<cim>
+			<varos>Miskolc</varos>
+			<utca>Márkon</utca>
+			<hazszam>12</hazszam>
+		</cim>
+	</vendeg>
+	
+	<rendeles e_v_e ="e1" e_v_v ="v1">
+		<osszeg>2300</osszeg>
+		<etel>Rántott hús</etel>
+	</rendeles>
+	
+	<rendeles e_v_e ="e2" e_v_v ="v2">
+		<osszeg>2000</osszeg>
+		<etel>Leves</etel>
+	</rendeles>
+	
+	<rendeles e_v_e ="e3" e_v_v ="v3">
+		<osszeg>2700</osszeg>
+		<etel>Vad gulyás</etel>
+	</rendeles>
+	
+</vendeglatas>

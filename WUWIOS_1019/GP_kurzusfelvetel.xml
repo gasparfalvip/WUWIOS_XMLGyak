@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GP_kurzusfelvetel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="GP_kurzusfelvetel.xsd" tanev="2022/2023 I" egyetem="ME">
+  <hallgato id="WUWIOS">
+    <szulev>1998-04-09</szulev>
+    <hnev>Gáspárfalvi Péter</hnev>
+    <szak evf="7">Mérnökinformatikus</szak>
+  </hallgato>
+  <kurzusok>
+    <kurzus id="GEIAL31G-B">
+      <kurzusnev>Korszerű információs technológiák</kurzusnev>
+      <kredit>5</kredit>
+      <hely>A1</hely>
+      <idopont>Hétfő 14:00 - 16:00</idopont>
+      <oktato>Árvai László Lajos</oktato>
+    </kurzus>
+    <kurzus id="GEIAL332-B">
+      <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+      <kredit>5</kredit>
+      <hely>XXXII</hely>
+      <idopont>Kedd 12:00 - 14:00</idopont>
+      <oktato>Dr. Bednarik László</oktato>
+    </kurzus>
+    <kurzus id="GEIAL30H-B">
+      <kurzusnev>Számítógép hálózat üzemeltetési alapismeretek II.</kurzusnev>
+      <kredit>5</kredit>
+      <hely>In/103 </hely>
+      <idopont>Szerda 10:00 - 12:00</idopont>
+      <oktato>Dr. Kovács Szilveszter Dezső</oktato>
+    </kurzus>
+  </kurzusok>
+</GP_kurzusfelvetel>
