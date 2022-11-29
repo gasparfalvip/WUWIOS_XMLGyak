@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="DOMWUWIOS">
+  <user id="1">
+    <firstname>Péter</firstname>
+    <lastname>Gáspárfalvi</lastname>
+    <profession>C</profession>
+  </user>
+  <user id="2">
+    <firstname>Béla</firstname>
+    <lastname>Kiss</lastname>
+    <profession>Full-stack dev</profession>
+  </user>
+  <user id="3">
+    <firstname>Ferenc</firstname>
+    <lastname>Rákóczi</lastname>
+    <profession>Back-end dev</profession>
+  </user>
+</users>
