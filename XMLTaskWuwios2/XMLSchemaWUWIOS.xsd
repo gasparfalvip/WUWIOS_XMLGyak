@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="nev" type="xs:string" />
+<xs:element name="iranyitosz" type="iranyitoszType" />
+<xs:element name="varos" type="xs:string" />
+<xs:element name="utcahsz" type="xs:string" />
+<xs:element name="adoszam" type="xs:string" />
+<xs:element name="beosztas" type="beosztasType" />
+<xs:element name="ber" type="xs:positiveInteger" />
+<xs:element name="cim" type="xs:string" />
+<xs:element name="tipus" type="tipusType" />
+<xs:element name="megjelenes" type="datumType" />
+<xs:element name="ar" type="xs:positiveInteger" />
+<xs:element name="korhatar" type="xs:string" />
+<xs:element name="szuld" type="datumType" />
+<xs:element name="idopont" type="datumType" />
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="videoteka" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nev" />
+                            <xs:element name="cim">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="iranyitosz" />
+                                        <xs:element ref="varos" />
+                                        <xs:element ref="utcahsz" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="tk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="tulajdonos" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nev" />
+                            <xs:element ref="adoszam">
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="tk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="dolgozo" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nev"/>
+                            <xs:element ref="beosztas" />
+                            <xs:element ref="ber"/>
+                        </xs:sequence>
+                        <xs:attribute name="d_id" type="xs:integer" use="required" />
+                        <xs:attribute name="tk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="tetel" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="cim" />
+                            <xs:element ref="tipus"  />
+                            <xs:element ref="megjelenes" />
+                            <xs:element ref="ar" />
+                            <xs:element ref="korhatar" />
+                        </xs:sequence>
+                        <xs:attribute name="t_id" type="xs:integer" use="required" />
+                        <xs:attribute name="tk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="kuncsaft" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="nev" />
+                            <xs:element ref="szuld" />
+                            <xs:element name="lakcim">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="iranyitosz"  />
+                                        <xs:element ref="varos"  />
+                                        <xs:element ref="utcahsz" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="k_id" type="xs:integer" use="required" />
+                        <xs:attribute name="tk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="kolcsonzes" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tétlek">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="t" minOccurs="1" maxOccurs="unbounded" type="kolcsonzesType" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="kk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="k_kk" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="idopont" />
+                        </xs:sequence>
+                        <xs:attribute name="k_id" type="xs:integer" use="required" />
+                        <xs:attribute name="kk_id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:key name="videoteka_key">
+            <xs:selector xpath="videoteka"/>
+            <xs:field xpath="@tk_id"/>
+        </xs:key>
+        <xs:key name="dolgozo_key">
+            <xs:selector xpath="dolgozo"/>
+            <xs:field xpath="@d_id"/>
+        </xs:key>
+        <xs:key name="tetel_key">
+            <xs:selector xpath="tetel"/>
+            <xs:field xpath="@t_id"/>
+        </xs:key>
+        <xs:key name="kuncsaft_key">
+            <xs:selector xpath="kuncsaft"/>
+            <xs:field xpath="@k_id"/>
+        </xs:key>
+        <xs:key name="kolcsonzes_key">
+            <xs:selector xpath="kolcsonzes"/>
+            <xs:field xpath="@kk_id"/>
+        </xs:key>
+
+        <xs:keyref name="Fkey_dolgozo_tk" refer="videoteka_key">
+            <xs:selector xpath="dolgozo"/>
+            <xs:field xpath="@tk_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="Fkey_tetel_tk" refer="videoteka_key">
+            <xs:selector xpath="tetel"/>
+            <xs:field xpath="@tk_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="Fkey_kuncsaft_tk" refer="videoteka_key">
+            <xs:selector xpath="kuncsaft"/>
+            <xs:field xpath="@tk_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="Fkey_kapcs_kuncsaft" refer="kuncsaft_key">
+            <xs:selector xpath="k_kk"/>
+            <xs:field xpath="@k_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="Fkey_kapcs_kolcsonzes" refer="kolcsonzes_key">
+            <xs:selector xpath="k_kk"/>
+            <xs:field xpath="@kk_id"/>
+        </xs:keyref>
+
+        <xs:keyref name="Fkey_tk_tulaj" refer="videoteka_key">
+            <xs:selector xpath="tulajdonos"/>
+            <xs:field xpath="@tk_id"/>
+        </xs:keyref>
+
+        <xs:unique name="unique_fonok">
+            <xs:selector xpath="tulajdonos" />
+            <xs:field xpath="@tk_id" />
+        </xs:unique>
+
+    </xs:element>
+
+    <xs:simpleType name="datumType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}[.]\d{2}[.]\d{2}[.]" />
+            <xs:length value="11"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="iranyitoszType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}" />
+            <xs:length value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="beosztasType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="vezető"/>
+            <xs:enumeration value="eladó"/>
+            <xs:enumeration value="ideiglenes"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DVD"/>
+            <xs:enumeration value="Kazetta"/>
+            <xs:enumeration value="Újság"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="kolcsonzesType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="6"/>
+            <xs:enumeration value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
