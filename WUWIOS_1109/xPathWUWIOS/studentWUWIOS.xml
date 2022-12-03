@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+	<student id="01">
+		<keresztnev>Péter</keresztnev>
+		<vezeteknev>Gáspárfalvi</vezeteknev>
+		<becenev>Gázspé</becenev>
+		<kor>24</kor>
+	</student>
+	
+	<student id="02">
+		<keresztnev>Béla</keresztnev>
+		<vezeteknev>Kerekes</vezeteknev>
+		<becenev>Skorpió</becenev>
+		<kor>44</kor>
+	</student>
+	
+	<student id="03">
+		<keresztnev>Antal</keresztnev>
+		<vezeteknev>Sűrű</vezeteknev>
+		<becenev>Pálesz</becenev>
+		<kor>70</kor>
+	</student>
+</class>

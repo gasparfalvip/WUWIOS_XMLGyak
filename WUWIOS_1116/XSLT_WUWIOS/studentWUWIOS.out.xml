@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <h2>FM apple- template</h2>
+        <p>ID: 01</p>
+        <p>
+            Vezeteknev: <span style="color : green">Gáspárfalvi</span>
+        </p>
+        <p>
+            Keresztnev: <span style="color : burgundy">Péter</span>
+        </p>
+        <p>
+            Becenev: <span style="color : black">Peti</span>
+        </p>
+        <p>
+            Kor: <span style="color : blue">23</span>
+        </p>
+        <p>
+            Osztondij: <span style="color : red">21500</span>
+        </p>
+        <p>ID: 02</p>
+        <p>
+            Vezeteknev: <span style="color : green">Kiss</span>
+        </p>
+        <p>
+            Keresztnev: <span style="color : burgundy">Jozsef</span>
+        </p>
+        <p>
+            Becenev: <span style="color : black">Jozsi</span>
+        </p>
+        <p>
+            Kor: <span style="color : blue">20</span>
+        </p>
+        <p>
+            Osztondij: <span style="color : red">18000</span>
+        </p>
+        <p>ID: 03</p>
+        <p>
+            Vezeteknev: <span style="color : green">Nagy</span>
+        </p>
+        <p>
+            Keresztnev: <span style="color : burgundy">Laszlo</span>
+        </p>
+        <p>
+            Becenev: <span style="color : black">Laci</span>
+        </p>
+        <p>
+            Kor: <span style="color : blue">22</span>
+        </p>
+        <p>
+            Osztondij: <span style="color : red">30000</span>
+        </p>
+        <p>ID: 04</p>
+        <p>
+            Vezeteknev: <span style="color : green">Toth</span>
+        </p>
+        <p>
+            Keresztnev: <span style="color : burgundy">Peter</span>
+        </p>
+        <p>
+            Becenev: <span style="color : black">Peti</span>
+        </p>
+        <p>
+            Kor: <span style="color : blue">21</span>
+        </p>
+        <p>
+            Osztondij: <span style="color : red">20000</span>
+        </p>
+        &gt;
+				
+			
+    </body>
+</html>

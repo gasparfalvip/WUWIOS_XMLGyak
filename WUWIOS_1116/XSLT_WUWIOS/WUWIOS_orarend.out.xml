@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h2>FM &Oacute;rarend &ndash; 2022/23. I. f&eacute;l&eacute;v.</h2>
+        <table border="4">
+            <tr bgcolor="#9acd32">
+                <th>ID</th><th>Tipus</th><th>Targy</th><th>Nap</th><th>Tol</th><th>Ig</th><th>Helyszin</th><th>Oktato</th><th>Szak</th>
+            </tr>
+            <tr>
+                <td>01</td><td>eloads</td><td>Mobil programozás alapjai</td><td>Hetfo</td><td>10</td><td>12</td><td>A2</td><td>Ag&aacute;rdi Antia</td><td>M&eacute;rn&ouml;kinf&oacute;</td>
+            </tr>
+            <tr>
+                <td>02</td><td>eloadas</td><td>Adatkezel&eacute;s XML-ben</td><td>Kedd</td><td>12</td><td>14</td><td>A2</td><td>Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinf&oacute;</td>
+            </tr>
+            <tr>
+                <td>03</td><td>gyakorlat</td><td>Adatkezel&eacute;s XML-ben</td><td>Szerda</td><td>10</td><td>12</td><td>Inf&oacute;</td><td>Bednarik L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;kinf&oacute;</td>
+            </tr>
+            <tr>
+                <td>04</td><td>gyakorlat</td><td>Webes applik&aacute;ci&oacute;k</td><td>Szerda</td><td>13</td><td>15</td><td>Inf&oacute;</td><td>Barab&aacute;s P&eacute;ter</td><td>M&eacute;rn&ouml;kinf&oacute;</td>
+            </tr>
+            &gt;
+					
+				
+        </table>
+    </body>
+</html>

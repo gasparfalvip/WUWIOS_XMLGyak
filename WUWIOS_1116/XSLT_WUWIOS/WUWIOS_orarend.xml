@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-sylesheet type = "text/xsl" href = "orarendJR9KY7.xsl"?>
+
+<FM_orarend>
+	<ora id="01" tipus="eloads">
+		<targy>Mobil programozás alapjai</targy>
+		<idopont>
+			<nap>Hetfo</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Agárdi Antia</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="02" tipus="eloadas">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>12</tol>
+			<ig>14</ig>
+		</idopont>
+		<helyszin>A2</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="03" tipus="gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>10</tol>
+			<ig>12</ig>
+		</idopont>
+		<helyszin>Infó</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+	<ora id="04" tipus="gyakorlat">
+		<targy>Webes applikációk</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>13</tol>
+			<ig>15</ig>
+		</idopont>
+		<helyszin>Infó</helyszin>
+		<oktato>Barabás Péter</oktato>
+		<szak>Mérnökinfó</szak>
+	</ora>
+</FM_orarend>
