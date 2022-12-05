@@ -1,0 +1,28 @@
+{
+    "students": {
+        "student": [
+            {
+                "nev": [
+                    "Gáspárfalvi Péter"
+                ],
+                "neptunkod": [
+                    "WUWIOS"
+                ],
+                "szak": [
+                    "PTI"
+                ]
+            },
+            {
+                "nev": [
+                    "Nagy Tamás"
+                ],
+                "neptunkod": [
+                    "111111"
+                ],
+                "szak": [
+                    "PTI"
+                ]
+            }
+        ]
+    }
+}
